@@ -1,0 +1,14 @@
+{
+  "name": "niuma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/niuma.cjs",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"Error: no dev specified\" && exit 1",
+  },
+  "keywords": [],
+  "author": "Boiao Ch <doubiliao@gmail.com>",
+  "license": "MIT"
+}

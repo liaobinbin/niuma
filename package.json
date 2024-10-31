@@ -1,0 +1,26 @@
+{
+  "name": "niuma",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liaobinbin/niuma.git"
+  },
+  "keywords": [],
+  "author": "Boiao Ch <doubiliao@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^2.2.3"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

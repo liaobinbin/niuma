@@ -1,0 +1,13 @@
+node_modules/
+dist/
+lib/
+.vscode/
+.idea/
+coverage/
+types/
+.DS_Store
+.turbo/
+
+# vscode devcontainers see issues #419 and #421 for context
+/.devcontainer.json
+/devcontainer
