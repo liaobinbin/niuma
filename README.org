@@ -19,6 +19,15 @@ NiuMa 是一个轻量级、快速的 JavaScript 框架，旨在简化构建现�
   <script src="https://cdn.example.com/niuma.js"></script>
 #+end_src
 
+** 代码结构设想
+#+begin_src typescript
+function Count() {
+  let count = 1; // 组件内利用let关键字代表声明的是响应式变量
+  return <div onClick={()=>{count + 1}}>{count}</div>;                                                                                                                                  
+}
+
+#+end_src
+
 ** 快速开始
 
 在 HTML 文件中引入并开始使用：
