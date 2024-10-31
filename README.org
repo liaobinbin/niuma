@@ -1,0 +1,84 @@
+* NiuMa JavaScript Framework
+
+NiuMa 是一个轻量级、快速的 JavaScript 框架，旨在简化构建现代 Web 应用的过程。通过优化性能和直观的 API，NiuMa 可以帮助开发者更加高效地操作 DOM 和管理应用状态。
+
+** 特性
+- *轻量和快速* ：设计简洁，加载和运行速度极快。
+- *直观的 API* ：面向开发者友好的方法，减少了学习成本。
+- *灵活的状态管理* ：无缝集成响应式状态管理机制。
+- *模块化设计* ：按需加载和扩展组件以节省资源。
+
+** 安装
+在项目中可以通过 npm 直接安装 NiuMa：
+#+begin_src shell
+  npm install niuma
+#+end_src
+
+或使用 CDN 方式引入：
+#+begin_src html
+  <script src="https://cdn.example.com/niuma.js"></script>
+#+end_src
+
+** 代码结构设想
+#+begin_src typescript
+function Count() {
+  let count = 1; // 组件内利用let关键字代表声明的是响应式变量
+  return <div onClick={()=>{count + 1}}>{count}</div>;                                                                                                                                  
+}
+
+#+end_src
+
+** 快速开始
+
+在 HTML 文件中引入并开始使用：
+
+#+begin_src html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Niuma App</title>
+  <script src="https://cdn.example.com/niuma.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    // 初始化应用
+    const app = new NiuMa({
+      target: '#app',
+      data: { message: 'Hello, Niuma!' }
+    });
+  </script>
+</body>
+</html>
+#+end_src
+
+** API 概述
+
+- ~new NiuMa(options)~: 初始化 NiuMa 应用。
+  - ~options.target~: 指定渲染目标的 DOM 元素选择器。
+  - ~options.data~: 初始数据，用于在应用中管理状态。
+
+** 示例
+创建一个计数器示例：
+
+#+begin_src javascript
+const app = new NiuMa({
+  target: '#app',
+  data: { count: 0 },
+  methods: {
+    increment() {
+      this.data.count += 1;
+    }
+  }
+});
+#+end_src
+
+** 文档
+详细的使用文档请参考：[Niuma Documentation](https://example.com/niuma-docs)
+
+** 贡献
+欢迎开发者贡献代码、报告问题，或提出新特性。请参阅贡献指南，帮助改进 Niuma。
+
+** 许可证
+NiuMa 使用 MIT 许可证。详细信息请参阅 LICENSE 文件。
