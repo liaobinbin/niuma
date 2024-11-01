@@ -6,6 +6,8 @@
   "types": "types/index.d.ts",
   "type": "module",
   "scripts": {
+    "types": "npm-run-all -nl types:*",
+    "types:h": "tsc --project ./h/tsconfig.json",
     "dev": "echo \"Error: no dev specified\" && exit 1"
   },
   "keywords": [],
