@@ -6,7 +6,7 @@
   "types": "types/index.d.ts",
   "type": "module",
   "scripts": {
-    "dev": "echo \"Error: no dev specified\" && exit 1",
+    "dev": "echo \"Error: no dev specified\" && exit 1"
   },
   "keywords": [],
   "author": "Boiao Ch <doubiliao@gmail.com>",

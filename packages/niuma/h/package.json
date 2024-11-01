@@ -1,0 +1,8 @@
+{
+  "name": "niuma/h",
+  "main": "./dist/h.cjs",
+  "module": "./dist/h.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "sideEffects": false
+}
